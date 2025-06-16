@@ -34,7 +34,7 @@
     height: 5vh;
     margin-left: 3vw ;
     margin-right: 3vw;
-    border-radius:30px ;
+    border-radius:1.875rem ;
     overflow: hidden;
     
 }
@@ -47,9 +47,11 @@
     font-size: 1rem;
 }
 #add-btn{
-    width: 3rem;
-    border-radius: 30px;
-    margin-right: 3px;
-    padding: 0;
+    border: none;
+    outline: none;
+    padding: 0.5rem 3.125rem;
+    border-radius: 1.875rem;
+    background: #ff5945;
+    color: #fff;
     font-size: 1rem;
 }
