@@ -16,6 +16,7 @@
     height: 40vh;
     background-color: #fff;
     margin: 25vh auto 10vh;
+    border-radius: 0.625rem;
 }
 .todo-title{
     display: flex;
