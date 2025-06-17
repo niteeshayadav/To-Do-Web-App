@@ -17,4 +17,28 @@ function addTask(){
         li.appendChild(span);
     }
     inputBox.value = "";
+    saveTasks();
 }
+
+todoList.addEventListener("click",(e)=>{
+   if(e.target.tagName === "LI"){
+      e.target.classList.toggle("checked");
+      saveTasks();
+   }
+   else if(e.target.tagName === "SPAN"){
+     e.target.parentElement.remove();
+     saveTasks();
+   }
+},false); 
+
+//false-used for bottom -up(means inner class -> outer class -> body -> html)-default false generally,but most developers use it 99% of time
+//true-used for top -down(means html -> body -> outer class -> inner class)
+
+function saveTasks(){
+    localStorage.setItem("tasks",todoList.innerHTML);
+}
+
+function showTasks(){
+    todoList.innerHTML=localStorage.getItem("tasks");
+}
+showTasks();
