@@ -13,10 +13,12 @@
 }
 .todo-app{
     width: 60vw;
-    height: 50vh;
+    min-height: 10.79vh;
+    max-height: 100%;
     background-color: #fff;
     margin: 25vh auto 10vh;
     border-radius: 0.625rem;
+    transition: height 0.3s ease-in-out;
 }
 .todo-title{
     display: flex;
@@ -61,6 +63,7 @@
 ul li{
     display: flex;
     align-items: center;
+    min-height: 7vh;
     justify-content: space-between;
     list-style: none;
     font-size: 1.2rem;
